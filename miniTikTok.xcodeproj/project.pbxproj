@@ -7,16 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691362CC2BCEE51400E44B0F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691362CB2BCEE51400E44B0F /* Data.swift */; };
+		691363192BCF5C5200E44B0F /* PlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691363182BCF5C5200E44B0F /* PlayerController.swift */; };
+		6913631B2BCF614200E44B0F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913631A2BCF614200E44B0F /* FeedView.swift */; };
+		6913631D2BCF614A00E44B0F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6913631C2BCF614A00E44B0F /* FeedCell.swift */; };
 		69CBA7FE2BCEC35D00CCFB2B /* miniTikTokApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBA7FD2BCEC35D00CCFB2B /* miniTikTokApp.swift */; };
-		69CBA8002BCEC35D00CCFB2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBA7FF2BCEC35D00CCFB2B /* ContentView.swift */; };
 		69CBA8022BCEC35F00CCFB2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CBA8012BCEC35F00CCFB2B /* Assets.xcassets */; };
 		69CBA8052BCEC35F00CCFB2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CBA8042BCEC35F00CCFB2B /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		691362CB2BCEE51400E44B0F /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		691363182BCF5C5200E44B0F /* PlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerController.swift; sourceTree = "<group>"; };
+		6913631A2BCF614200E44B0F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		6913631C2BCF614A00E44B0F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		69CBA7FA2BCEC35D00CCFB2B /* miniTikTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniTikTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CBA7FD2BCEC35D00CCFB2B /* miniTikTokApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miniTikTokApp.swift; sourceTree = "<group>"; };
-		69CBA7FF2BCEC35D00CCFB2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		69CBA8012BCEC35F00CCFB2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69CBA8042BCEC35F00CCFB2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				69CBA7FD2BCEC35D00CCFB2B /* miniTikTokApp.swift */,
-				69CBA7FF2BCEC35D00CCFB2B /* ContentView.swift */,
+				6913631A2BCF614200E44B0F /* FeedView.swift */,
+				6913631C2BCF614A00E44B0F /* FeedCell.swift */,
+				691363182BCF5C5200E44B0F /* PlayerController.swift */,
+				691362CB2BCEE51400E44B0F /* Data.swift */,
 				69CBA8012BCEC35F00CCFB2B /* Assets.xcassets */,
 				69CBA8032BCEC35F00CCFB2B /* Preview Content */,
 			);
@@ -137,8 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69CBA8002BCEC35D00CCFB2B /* ContentView.swift in Sources */,
+				6913631B2BCF614200E44B0F /* FeedView.swift in Sources */,
+				691362CC2BCEE51400E44B0F /* Data.swift in Sources */,
+				691363192BCF5C5200E44B0F /* PlayerController.swift in Sources */,
 				69CBA7FE2BCEC35D00CCFB2B /* miniTikTokApp.swift in Sources */,
+				6913631D2BCF614A00E44B0F /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +299,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukshubert.miniTikTok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,9 +332,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.lukshubert.miniTikTok;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
